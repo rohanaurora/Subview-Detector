@@ -7,21 +7,30 @@
 //
 
 #import "ViewController.h"
+#import "FirstView.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIView *thirdView;
+@property (weak, nonatomic) IBOutlet UIView *secondView;
+@property (strong, nonatomic) IBOutlet UIView *firstView;
 
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
+
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"Subview Detector";
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    [super touchesBegan:touches withEvent:event];
+    
 }
+
 
 @end

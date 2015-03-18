@@ -14,6 +14,8 @@
 		BD6D556E1AB93D7E00F5AB66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6D556D1AB93D7E00F5AB66 /* Images.xcassets */; };
 		BD6D55711AB93D7E00F5AB66 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD6D556F1AB93D7E00F5AB66 /* LaunchScreen.xib */; };
 		BD6D557D1AB93D7E00F5AB66 /* Subview_DetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6D557C1AB93D7E00F5AB66 /* Subview_DetectorTests.m */; };
+		BD6D55891AB942ED00F5AB66 /* FirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6D55881AB942ED00F5AB66 /* FirstView.m */; };
+		BD6D558B1AB9433E00F5AB66 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD6D558A1AB9433E00F5AB66 /* FirstView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		BD6D55761AB93D7E00F5AB66 /* Subview-DetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Subview-DetectorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6D557B1AB93D7E00F5AB66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD6D557C1AB93D7E00F5AB66 /* Subview_DetectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Subview_DetectorTests.m; sourceTree = "<group>"; };
+		BD6D55871AB942ED00F5AB66 /* FirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstView.h; sourceTree = "<group>"; };
+		BD6D55881AB942ED00F5AB66 /* FirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstView.m; sourceTree = "<group>"; };
+		BD6D558A1AB9433E00F5AB66 /* FirstView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +90,11 @@
 				BD6D55651AB93D7E00F5AB66 /* AppDelegate.m */,
 				BD6D55671AB93D7E00F5AB66 /* ViewController.h */,
 				BD6D55681AB93D7E00F5AB66 /* ViewController.m */,
+				BD6D55871AB942ED00F5AB66 /* FirstView.h */,
+				BD6D55881AB942ED00F5AB66 /* FirstView.m */,
+				BD6D558A1AB9433E00F5AB66 /* FirstView.xib */,
 				BD6D556A1AB93D7E00F5AB66 /* Main.storyboard */,
-				BD6D556D1AB93D7E00F5AB66 /* Images.xcassets */,
-				BD6D556F1AB93D7E00F5AB66 /* LaunchScreen.xib */,
+				BD6D55861AB940C000F5AB66 /* Resources */,
 				BD6D55601AB93D7E00F5AB66 /* Supporting Files */,
 			);
 			path = "Subview-Detector";
@@ -117,6 +124,15 @@
 				BD6D557B1AB93D7E00F5AB66 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD6D55861AB940C000F5AB66 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BD6D556D1AB93D7E00F5AB66 /* Images.xcassets */,
+				BD6D556F1AB93D7E00F5AB66 /* LaunchScreen.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD6D556C1AB93D7E00F5AB66 /* Main.storyboard in Resources */,
+				BD6D558B1AB9433E00F5AB66 /* FirstView.xib in Resources */,
 				BD6D55711AB93D7E00F5AB66 /* LaunchScreen.xib in Resources */,
 				BD6D556E1AB93D7E00F5AB66 /* Images.xcassets in Resources */,
 			);
@@ -220,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD6D55691AB93D7E00F5AB66 /* ViewController.m in Sources */,
+				BD6D55891AB942ED00F5AB66 /* FirstView.m in Sources */,
 				BD6D55661AB93D7E00F5AB66 /* AppDelegate.m in Sources */,
 				BD6D55631AB93D7E00F5AB66 /* main.m in Sources */,
 			);

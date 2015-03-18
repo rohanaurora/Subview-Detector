@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QRV-Nf-Tv6">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCB-OJ-CkV">
+                                <rect key="frame" x="119" y="115" width="362" height="370"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ii6-41-6cd">
+                                        <rect key="frame" x="75" y="84" width="212" height="201"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Ii6-41-6cd" firstAttribute="top" secondItem="FCB-OJ-CkV" secondAttribute="top" constant="84" id="Dj1-7F-GPG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ii6-41-6cd" secondAttribute="trailing" constant="75" id="Pzl-bf-G93"/>
+                                    <constraint firstItem="Ii6-41-6cd" firstAttribute="leading" secondItem="FCB-OJ-CkV" secondAttribute="leading" constant="75" id="bfV-Tg-HjD"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ii6-41-6cd" secondAttribute="bottom" constant="85" id="ixO-cM-U3s"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FCB-OJ-CkV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="BLj-g3-yRL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FCB-OJ-CkV" secondAttribute="bottom" constant="115" id="JNK-GC-GnG"/>
+                            <constraint firstItem="FCB-OJ-CkV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="103" id="RDa-yf-FIj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FCB-OJ-CkV" secondAttribute="trailing" constant="103" id="XNK-1a-QhZ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="0qZ-eM-5o8"/>
+                    <connections>
+                        <outlet property="firstView" destination="8bC-Xf-vdC" id="AUH-eZ-EDr"/>
+                        <outlet property="secondView" destination="FCB-OJ-CkV" id="eSx-8t-PCf"/>
+                        <outlet property="thirdView" destination="Ii6-41-6cd" id="kQ1-7b-skq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1137" y="387"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="elt-pw-pFQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QRV-Nf-Tv6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hDA-GG-L1c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CAr-Kf-wkR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zdn-Y5-NHt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="387"/>
         </scene>
     </scenes>
 </document>
